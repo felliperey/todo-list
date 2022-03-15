@@ -1,0 +1,9 @@
+1. Se voce tem uma funcao dentro do seu componente que gera um JSX, eh um indicador de que ali pode-se extrair um novo componente
+2. Deixar o componente o mais ignorante possivel quanto ao estado global da aplicacao
+3. Se precisar fazer um if no JSX, faz com short circuit (boolean && -> mostrar resultado) ou com ternario (se tem if e else)
+
+// Teste
+1. Se precisa comentar as possibilidades de um teste ou usar When ou If no nome do teste, eh sinal que ali deveria ser um describe
+
+// Regra
+1. Nao devemos ter estado compartilhado entre testes / a execucao de um teste nao deve impactar em nada no estado inicial de outro teste
